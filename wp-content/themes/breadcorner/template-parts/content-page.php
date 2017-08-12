@@ -20,6 +20,9 @@
     <?php } ?>
 
 	<div class="entry-content">
+		<?php if(is_front_page())
+			echo do_shortcode('[smartslider3 slider=2]');
+		?>
 		<?php
 			the_content();
 

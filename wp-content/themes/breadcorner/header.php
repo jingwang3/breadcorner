@@ -32,7 +32,8 @@
                 </button>
                 <div class="navbar-brand">
                     <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
-                        <a href="<?php echo esc_url( home_url( '/' )); ?>">
+                        <a class="site-title hidden-desktop" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
+                        <a class="hidden-mobile" href="<?php echo esc_url( home_url( '/' )); ?>">
                             <img src="<?php echo get_theme_mod( 'wp_bootstrap_starter_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                         </a>
                     <?php else : ?>

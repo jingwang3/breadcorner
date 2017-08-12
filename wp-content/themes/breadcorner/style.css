@@ -908,3 +908,39 @@ footer#colophon {
     font-size: 86%;
   }
 }
+
+/* utilities */
+@media only screen and (min-width: 991px){
+  .hidden-desktop{
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 990px){
+  .hidden-mobile{
+    display: none !important;
+  }
+}
+/* Custom CSS for Bread Corner*/
+header#masthead {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #fde691;
+	min-height: 50px;
+}
+
+#content.site-content {
+    padding-top: 0;
+	background-color: #fff;
+}
+
+.page-content, .entry-content, .entry-summary {
+    margin-top: -5px;
+}
+
+.navbar-brand{
+    position: absolute;
+    background-color: #f5deb3;
+	top: 0;
+	padding: 0;
+}

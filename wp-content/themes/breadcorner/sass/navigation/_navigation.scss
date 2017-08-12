@@ -1,0 +1,63 @@
+header#masthead {
+  box-shadow: 0 0 2px -1px #333;
+  margin-bottom: 0;
+}
+.navbar-brand > a {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 1rem;
+  outline: medium none;
+  text-decoration: none;
+}
+.navbar-brand > a:visited, .navbar-brand > a:hover {
+  text-decoration: none;
+}
+#page-sub-header {
+  padding: 1.875rem 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  position: relative;
+  color: #cdbfe3;
+  padding: 4rem 0.938rem;
+  text-align: center;
+  font-size: 1.25rem;
+  background-size: cover;
+}
+#page-sub-header h1{
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 0.625rem;
+}
+#page-sub-header p{
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+
+@media screen and (min-width: 768px) {
+  #page-sub-header h1{
+    font-size: 3.750rem;
+    line-height: 1;
+  }
+  #page-sub-header {
+    padding-top: 3.750rem;
+    padding-bottom: 3.750rem;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #page-sub-header p{
+    max-width: 50rem;
+  }
+}
+
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+@import "links";
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+@import "menus";

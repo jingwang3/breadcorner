@@ -934,7 +934,6 @@ header#masthead {
     position: fixed;
     width: 100%;
     z-index: 100;
-    background-color: #fde691;
 }
 
 #content.site-content {
@@ -961,7 +960,6 @@ header#masthead {
 }
 
 .online-order{
-  background-color: #fde691;
   text-align: center;
   padding:55px;
 }
@@ -974,3 +972,18 @@ header#masthead {
 .online-order p{
   font-size:24px;
 }
+
+
+.contact-us, .online-order, header#masthead{
+  background-color: #fde691;
+}
+
+.contact-inf{
+  padding: 15px;
+}
+
+.contact-us h3{
+  font-size: 28px;
+  color: #6a3934;
+}
+

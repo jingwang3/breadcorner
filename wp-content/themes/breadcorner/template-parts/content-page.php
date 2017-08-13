@@ -33,18 +33,21 @@
 				
 			</div>
 			<div class="contact-us row">
+				<h2>Find Us</h2>
 				<div class="col-md-6">
 					<?php echo do_shortcode('[wpgmza id="1"]'); ?>
 				</div>
 				<div class="col-md-6">
-					<h3>Opening Hours</h3>
-					<span>Mon – Sunday  9AM - 8PM</span> 
-					<h3>Address</h3>
-					<span>591 Hungerford Drive, Rockville, MD, 20850</span>
-					<h3>Phone</h3>
-					<span>(240)328-6547</span>
-					<h3>Email</h3>
-					<span>breadcorner2009@gmail.com</span>
+					<div class="contact-info">
+						<h3>Opening Hours</h3>
+						<span>Mon – Sunday  9AM - 8PM</span> 
+						<h3>Address</h3>
+						<span>591 Hungerford Drive, Rockville, MD, 20850</span>
+						<h3>Phone</h3>
+						<span>(240)328-6547</span>
+						<h3>Email</h3>
+						<span>breadcorner2009@gmail.com</span>						
+					</div>
 				</div>
 			</div>
 		<?php endif; ?>

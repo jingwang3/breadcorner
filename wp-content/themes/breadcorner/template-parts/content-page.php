@@ -34,7 +34,7 @@
 			</div>
 			<div class="contact-us row">
 				<div class="col-md-6">
-					[wpgmza id="1"]
+					<?php echo do_shortcode("[wpgmza id="1"]"); ?>
 				</div>
 				<div class="col-md-6">
 					<h3>Opening Hours</h3>

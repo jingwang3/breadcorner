@@ -939,6 +939,7 @@ header#masthead {
 #content.site-content {
     padding-top: 0;
 	background-color: #fff;
+	padding-bottom: 0;
 }
 
 .page-content, .entry-content, .entry-summary {
@@ -960,30 +961,37 @@ header#masthead {
 }
 
 .online-order{
-  text-align: center;
   padding:55px;
-}
-
-.online-order h2{
-  font-size:48px;
-  color: #6a3934
+  background-image: url('/wp-content/uploads/2017/08/bg-pattern.png');
 }
 
 .online-order p{
   font-size:24px;
 }
 
+.contact-us, .online-order{
+  text-align: center;
+}
+
+.contact-us h2, .online-order h2{
+  font-size:48px;
+  color: #6a3934
+}
 
 .contact-us, .online-order, header#masthead{
   background-color: #fde691;
 }
 
-.contact-inf{
+.contact-info{
   padding: 15px;
 }
 
 .contact-us h3{
   font-size: 28px;
   color: #6a3934;
+}
+
+.contact-us span{
+  font-size:16px
 }
 

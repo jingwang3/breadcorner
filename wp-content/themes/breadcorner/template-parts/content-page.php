@@ -29,8 +29,24 @@
 				<p><?php the_field( 'online_order_pitch' ); ?></p>
 				<a href="/online-order" class="btn btn-primary btn-lg">Order Now</a>
 			</div>
-			
-			<h2></h2>
+			<div class="categories">
+				
+			</div>
+			<div class="contact-us row">
+				<div class="col-md-6">
+					[wpgmza id="1"]
+				</div>
+				<div class="col-md-6">
+					<h3>Opening Hours</h3>
+					<span>Mon – Sunday  9AM - 8PM</span> 
+					<h3>Address</h3>
+					<span>591 Hungerford Drive, Rockville, MD, 20850</span>
+					<h3>Phone</h3>
+					<span>(240)328-6547</span>
+					<h3>Email</h3>
+					<span>breadcorner2009@gmail.com</span>
+				</div>
+			</div>
 		<?php endif; ?>
 		<?php
 			the_content();

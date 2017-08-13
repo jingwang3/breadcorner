@@ -23,6 +23,15 @@
 		<?php if(is_front_page())
 			echo do_shortcode('[smartslider3 slider=2]');
 		?>
+		<?php if(is_front_page()) : ?>
+			<div class="online-order">
+				<h2>Online Order</h2>
+				<p><?php the_field( 'online_order_pitch' ); ?></p>
+				<a href="/online-order" class="btn btn-primary btn-lg">Order Now</a>
+			</div>
+			
+			<h2></h2>
+		<?php endif; ?>
 		<?php
 			the_content();
 

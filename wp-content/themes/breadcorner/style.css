@@ -926,6 +926,10 @@ body.home .entry-header{
   display: none;
 }
 
+.content-area{
+  width: 100%;
+}
+
 header#masthead {
     position: fixed;
     width: 100%;
@@ -954,4 +958,19 @@ header#masthead {
 
 .navbar-brand img{
   margin-top: -0.25rem;
+}
+
+.online-order{
+  background-color: #fde691;
+  text-align: center;
+  padding:55px;
+}
+
+.online-order h2{
+  font-size:48px;
+  color: #6a3934
+}
+
+.online-order p{
+  font-size:24px;
 }

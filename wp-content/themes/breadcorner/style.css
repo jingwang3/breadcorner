@@ -921,6 +921,12 @@ footer#colophon {
     display: none !important;
   }
 }
+
+/* utilities */
+.no-padding{
+  padding: 0;
+}
+
 /* Custom CSS for Bread Corner*/
 body.home .entry-header{
   display: none;

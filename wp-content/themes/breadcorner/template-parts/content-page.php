@@ -31,51 +31,54 @@
 			</div>
 			<div class="categories">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 no-padding cat-item cat-bread">
 						<a href="#">
 							<?php $bread = get_field( 'bread' ); ?>
 							<?php if ( $bread ) { ?>
-								<img src="<?php echo $bread['url']; ?>" alt="<?php echo $bread['alt']; ?>" />
+								<img class="img-responsive" src="<?php echo $bread['url']; ?>" alt="<?php echo $bread['alt']; ?>" />
 							<?php } ?>
 						</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 no-padding cat-item cat-cake">
 						<a href="#">
 							<?php $cake = get_field( 'cake' ); ?>
 							<?php if ( $cake ) { ?>
-								<img src="<?php echo $cake['url']; ?>" alt="<?php echo $cake['alt']; ?>" />
+								<img class="img-responsive" src="<?php echo $cake['url']; ?>" alt="<?php echo $cake['alt']; ?>" />
 							<?php } ?>
 						</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 no-padding cat-item cat-cookie">
 						<a href="#">
 							<?php $cookie = get_field( 'cookie' ); ?>
 							<?php if ( $cookie ) { ?>
-								<img src="<?php echo $cookie['url']; ?>" alt="<?php echo $cookie['alt']; ?>" />
+								<img class="img-responsive" src="<?php echo $cookie['url']; ?>" alt="<?php echo $cookie['alt']; ?>" />
 							<?php } ?>
 						</a>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 no-padding cat-item cat-loaf">
 						<a href="#">
 							<?php $loaf = get_field( 'loaf' ); ?>
 							<?php if ( $loaf ) { ?>
-								<img src="<?php echo $loaf['url']; ?>" alt="<?php echo $loaf['alt']; ?>" />
+								<img class="img-responsive" src="<?php echo $loaf['url']; ?>" alt="<?php echo $loaf['alt']; ?>" />
 							<?php } ?>
 						</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 no-padding cat-item cat-pastry">
 						<a href="#">
 							<?php $pastry = get_field( 'pastry' ); ?>
 							<?php if ( $pastry ) { ?>
-								<img src="<?php echo $pastry['url']; ?>" alt="<?php echo $pastry['alt']; ?>" />
+								<img class="img-responsive" src="<?php echo $pastry['url']; ?>" alt="<?php echo $pastry['alt']; ?>" />
 							<?php } ?>
 						</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 no-padding cat-item cat-other">
 						<a href="#">
-							<img src="http://placehold.it/800x480" />
+							<?php $other = get_field( 'other' ); ?>
+							<?php if ( $other ) { ?>
+								<img class="img-responsive" src="<?php echo $other['url']; ?>" alt="<?php echo $other['alt']; ?>" />
+							<?php } ?>
 						</a>
 					</div>
 				</div>			

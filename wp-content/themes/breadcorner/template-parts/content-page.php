@@ -30,7 +30,55 @@
 				<a href="/online-order" class="btn btn-primary btn-lg">Order Now</a>
 			</div>
 			<div class="categories">
-				
+				<div class="row">
+					<div class="col-md-4">
+						<a href="#">
+							<?php $bread = get_field( 'bread' ); ?>
+							<?php if ( $bread ) { ?>
+								<img src="<?php echo $bread['url']; ?>" alt="<?php echo $bread['alt']; ?>" />
+							<?php } ?>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<?php $cake = get_field( 'cake' ); ?>
+							<?php if ( $cake ) { ?>
+								<img src="<?php echo $cake['url']; ?>" alt="<?php echo $cake['alt']; ?>" />
+							<?php } ?>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<?php $cookie = get_field( 'cookie' ); ?>
+							<?php if ( $cookie ) { ?>
+								<img src="<?php echo $cookie['url']; ?>" alt="<?php echo $cookie['alt']; ?>" />
+							<?php } ?>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="#">
+							<?php $loaf = get_field( 'loaf' ); ?>
+							<?php if ( $loaf ) { ?>
+								<img src="<?php echo $loaf['url']; ?>" alt="<?php echo $loaf['alt']; ?>" />
+							<?php } ?>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<?php $pastry = get_field( 'pastry' ); ?>
+							<?php if ( $pastry ) { ?>
+								<img src="<?php echo $pastry['url']; ?>" alt="<?php echo $pastry['alt']; ?>" />
+							<?php } ?>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<img src="http://placehold.it/800x480" />
+						</a>
+					</div>
+				</div>			
 			</div>
 			<div class="contact-us">
 				<h2>Find Us</h2>

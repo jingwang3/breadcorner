@@ -2678,15 +2678,15 @@ fieldset[disabled] a.btn {
 }
 
 .btn-primary {
-  color: #f5deb3;
-  background-color: #542020;
-  border-color: #c5943b;
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
 }
 
 .btn-primary:hover {
-  color: #531f1f;
-  background-color: #f5deb3;
-  border-color: #ca9942;
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b;
 }
 
 .btn-primary:focus, .btn-primary.focus {

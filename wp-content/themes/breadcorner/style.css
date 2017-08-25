@@ -923,6 +923,27 @@ footer#colophon {
   }
 }
 
+/*bootstrap override*/
+
+.btn-primary {
+  color: #f5deb3;
+  background-color: #542020;
+  border-color: #c5943b;
+}
+
+.btn-primary:hover {
+  color: #531f1f;
+  background-color: #f5deb3;
+  border-color: #ca9942;
+}
+
+a {
+    color: #6a3934;
+}
+a:focus, a:hover {
+    color: rgb(197, 148, 61);
+}
+
 /* utilities */
 .no-padding{
   padding: 0;

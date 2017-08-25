@@ -102,21 +102,9 @@
 			<div class="contact-us">
 				<h2>Find Us</h2>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-xs-12">
 						<?php echo do_shortcode('[wpgmza id="1"]'); ?>
 					</div>
-					<div class="col-md-6">
-						<div class="contact-info">
-							<h3>Opening Hours</h3>
-							<span>Mon – Sunday  9AM - 8PM</span> 
-							<h3>Address</h3>
-							<span>591 Hungerford Drive, Rockville, MD, 20850</span>
-							<h3>Phone</h3>
-							<span>(240)328-6547</span>
-							<h3>Email</h3>
-							<span>breadcorner2009@gmail.com</span>						
-						</div>
-					</div>					
 				</div>
 			</div>
 		<?php endif; ?>
@@ -132,6 +120,24 @@
 
 	<?php if ( get_edit_post_link() && !$enable_vc ) : ?>
 		<footer class="entry-footer">
+			<div class="row">
+				<div class="col-md-3">
+					<h3>Opening Hours</h3>
+					<span>Mon – Sunday  9AM - 8PM</span>					
+				</div>
+				<div class="col-md-34">
+					<h3>Address</h3>
+					<span>591 Hungerford Drive, Rockville, MD, 20850</span>					
+				</div>
+				<div class="col-md-3">
+					<h3>Phone</h3>
+					<span>(240)328-6547</span>					
+				</div>
+				<div class="col-md-3">
+					<h3>Email</h3>
+					<span>breadcorner2009@gmail.com</span>					
+				</div>				
+			</div>
 			<?php
 				edit_post_link(
 					sprintf(

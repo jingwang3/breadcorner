@@ -1001,3 +1001,32 @@ header#masthead {
   font-size:16px
 }
 
+.cat-item{
+  display: inherit;
+}
+
+.cat-item a{
+  text-align:center;
+  display:inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.cat-item a span{
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  left: 25%;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 5px
+}
+
+.cat-item a:hover span{
+  background-color: rgb(253, 230, 145);
+  color: #23282d;
+}

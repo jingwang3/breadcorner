@@ -36,7 +36,9 @@
 							<span>Bread</span>
 							<?php $bread = get_field( 'bread' ); ?>
 							<?php if ( $bread ) { ?>
-								<img class="img-responsive" src="<?php echo $bread['url']; ?>" alt="<?php echo $bread['alt']; ?>" />
+								<div class="img-overlay">
+									<img class="img-responsive" src="<?php echo $bread['url']; ?>" alt="<?php echo $bread['alt']; ?>" />
+								</div>
 							<?php } ?>
 						</a>
 					</div>
@@ -45,7 +47,9 @@
 							<span>Cake</span>
 							<?php $cake = get_field( 'cake' ); ?>
 							<?php if ( $cake ) { ?>
-								<img class="img-responsive" src="<?php echo $cake['url']; ?>" alt="<?php echo $cake['alt']; ?>" />
+								<div class="img-overlay">
+									<img class="img-responsive" src="<?php echo $cake['url']; ?>" alt="<?php echo $cake['alt']; ?>" />
+								</div>
 							<?php } ?>
 						</a>
 					</div>
@@ -54,7 +58,9 @@
 							<span>Cookie</span>
 							<?php $cookie = get_field( 'cookie' ); ?>
 							<?php if ( $cookie ) { ?>
-								<img class="img-responsive" src="<?php echo $cookie['url']; ?>" alt="<?php echo $cookie['alt']; ?>" />
+								<div class="img-overlay">
+									<img class="img-responsive" src="<?php echo $cookie['url']; ?>" alt="<?php echo $cookie['alt']; ?>" />
+								</div>
 							<?php } ?>
 						</a>
 					</div>
@@ -65,7 +71,9 @@
 							<span>Loaf</span>
 							<?php $loaf = get_field( 'loaf' ); ?>
 							<?php if ( $loaf ) { ?>
-								<img class="img-responsive" src="<?php echo $loaf['url']; ?>" alt="<?php echo $loaf['alt']; ?>" />
+								<div class="img-overlay">
+									<img class="img-responsive" src="<?php echo $loaf['url']; ?>" alt="<?php echo $loaf['alt']; ?>" />
+								</div>
 							<?php } ?>
 						</a>
 					</div>
@@ -74,7 +82,9 @@
 							<span>Pastry</span>
 							<?php $pastry = get_field( 'pastry' ); ?>
 							<?php if ( $pastry ) { ?>
-								<img class="img-responsive" src="<?php echo $pastry['url']; ?>" alt="<?php echo $pastry['alt']; ?>" />
+								<div class="img-overlay">
+									<img class="img-responsive" src="<?php echo $pastry['url']; ?>" alt="<?php echo $pastry['alt']; ?>" />
+								</div>
 							<?php } ?>
 						</a>
 					</div>
@@ -83,7 +93,9 @@
 							<span>Other</span>
 							<?php $other = get_field( 'other' ); ?>
 							<?php if ( $other ) { ?>
-								<img class="img-responsive" src="<?php echo $other['url']; ?>" alt="<?php echo $other['alt']; ?>" />
+								<div class="img-overlay">
+									<img class="img-responsive" src="<?php echo $other['url']; ?>" alt="<?php echo $other['alt']; ?>" />
+								</div>
 							<?php } ?>
 						</a>
 					</div>

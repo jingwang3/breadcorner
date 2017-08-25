@@ -116,22 +116,22 @@
 
 	<?php if ( get_edit_post_link() && !$enable_vc ) : ?>
 		<footer class="entry-footer">
-			<div class="col-md-3">
-				<h3>Opening Hours</h3>
-				<span>Mon – Sunday  9AM - 8PM</span>					
+			<div class="row">
+				<div class="col-md-4">
+					<h3>Opening Hours</h3>
+					<span>Mon – Sunday  9AM - 8PM</span>					
+				</div>
+				<div class="col-md-4">
+					<h3>Phone & Email</h3>
+					<span><a href="tel:2403286547">(240)328-6547</a> 
+					<br /><a href="mailto:breadcorner2009@gmail.com">breadcorner2009@gmail.com</a></span>					
+				</div>
+				<div class="col-md-4">
+					<h3>Address</h3>
+					<span>591 Hungerford Drive, 
+					<br />Rockville, MD, 20850</span>					
+				</div>				
 			</div>
-			<div class="col-md-3">
-				<h3>Address</h3>
-				<span>591 Hungerford Drive, Rockville, MD, 20850</span>					
-			</div>
-			<div class="col-md-3">
-				<h3>Phone</h3>
-				<span>(240)328-6547</span>					
-			</div>
-			<div class="col-md-3">
-				<h3>Email</h3>
-				<span>breadcorner2009@gmail.com</span>					
-			</div>				
 			<?php
 				edit_post_link(
 					sprintf(

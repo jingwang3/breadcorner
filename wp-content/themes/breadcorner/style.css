@@ -1002,7 +1002,7 @@ header#masthead {
 }
 
 .cat-item{
-  display: inherit;
+  display: flex;
 }
 
 .cat-item a{
@@ -1027,6 +1027,15 @@ header#masthead {
 }
 
 .cat-item a:hover span{
-  background-color: rgb(253, 230, 145);
-  color: #23282d;
+  background-color: rgba(101, 94, 76, 0.56);
+  color: #ffffff;
+}
+
+.cat-item a img{
+  -webkit-filter: opacity(.9);
+  filter: opacity(.9);
+}
+
+.cat-item a:hover img {
+  filter: none;
 }

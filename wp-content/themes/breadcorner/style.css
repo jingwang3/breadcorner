@@ -1009,7 +1009,8 @@ header#masthead {
 
 .contact-us h2, .online-order h2{
   font-size:48px;
-  color: #6a3934
+  color: #6a3934;
+  margin-bottom: 0;
 }
 
 .contact-us, .online-order, header#masthead{

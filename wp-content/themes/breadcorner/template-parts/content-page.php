@@ -88,7 +88,7 @@
 					</div>
 					<div class="col-sm-6 col-md-4 no-padding cat-item cat-other">
 						<a href="/products">
-							<span>Other</span>
+							<span>More</span>
 							<?php $other = get_field( 'other' ); ?>
 							<?php if ( $other ) { ?>
 								<div class="img-overlay">

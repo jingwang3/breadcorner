@@ -329,6 +329,7 @@ header#masthead {
 
 .navbar-brand {
   height: auto;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .navbar-toggle .icon-bar {
@@ -843,8 +844,8 @@ object {
 # Footer
 --------------------------------------------------------------*/
 footer#colophon {
-  background: #2a2730 none repeat scroll 0 0;
-  color: #99979c;
+  background-color: #c99a42;
+  color: #030007;
   padding: 1.250rem 0;
   text-align: center;
 }
@@ -979,13 +980,19 @@ header#masthead {
   text-align: center;
 }
 
+.contact-us h2 {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background-color: wheat;
+}
+
 .contact-us h2, .online-order h2{
   font-size:48px;
   color: #6a3934
 }
 
 .contact-us, .online-order, header#masthead{
-  background-color: #fde691;
+  background-color: #fff;
 }
 
 .contact-info{
@@ -1038,4 +1045,14 @@ header#masthead {
 
 .cat-item a:hover img {
   filter: none;
+}
+
+.entry-footer{
+  padding-top:50px;
+  background-color: #f5deb3;
+  border-bottom: 1px dashed black;
+}
+
+.entry-footer h3{
+  color:#6a3934;
 }

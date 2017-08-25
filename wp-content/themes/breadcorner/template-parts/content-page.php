@@ -32,7 +32,8 @@
 			<div class="categories">
 				<div class="row">
 					<div class="col-md-4 no-padding cat-item cat-bread">
-						<a href="#">
+						<a href="/products/bread">
+							<span>Bread</span>
 							<?php $bread = get_field( 'bread' ); ?>
 							<?php if ( $bread ) { ?>
 								<img class="img-responsive" src="<?php echo $bread['url']; ?>" alt="<?php echo $bread['alt']; ?>" />
@@ -40,7 +41,8 @@
 						</a>
 					</div>
 					<div class="col-md-4 no-padding cat-item cat-cake">
-						<a href="#">
+						<a href="/products/cake">
+							<span>Cake</span>
 							<?php $cake = get_field( 'cake' ); ?>
 							<?php if ( $cake ) { ?>
 								<img class="img-responsive" src="<?php echo $cake['url']; ?>" alt="<?php echo $cake['alt']; ?>" />
@@ -48,7 +50,8 @@
 						</a>
 					</div>
 					<div class="col-md-4 no-padding cat-item cat-cookie">
-						<a href="#">
+						<a href="/products/cookie">
+							<span>Cookie</span>
 							<?php $cookie = get_field( 'cookie' ); ?>
 							<?php if ( $cookie ) { ?>
 								<img class="img-responsive" src="<?php echo $cookie['url']; ?>" alt="<?php echo $cookie['alt']; ?>" />
@@ -58,7 +61,8 @@
 				</div>
 				<div class="row">
 					<div class="col-md-4 no-padding cat-item cat-loaf">
-						<a href="#">
+						<a href="/products/loaf">
+							<span>Loaf</span>
 							<?php $loaf = get_field( 'loaf' ); ?>
 							<?php if ( $loaf ) { ?>
 								<img class="img-responsive" src="<?php echo $loaf['url']; ?>" alt="<?php echo $loaf['alt']; ?>" />
@@ -66,7 +70,8 @@
 						</a>
 					</div>
 					<div class="col-md-4 no-padding cat-item cat-pastry">
-						<a href="#">
+						<a href="/products/pastry">
+							<span>Pastry</span>
 							<?php $pastry = get_field( 'pastry' ); ?>
 							<?php if ( $pastry ) { ?>
 								<img class="img-responsive" src="<?php echo $pastry['url']; ?>" alt="<?php echo $pastry['alt']; ?>" />
@@ -74,7 +79,8 @@
 						</a>
 					</div>
 					<div class="col-md-4 no-padding cat-item cat-other">
-						<a href="#">
+						<a href="/products">
+							<span>Other</span>
 							<?php $other = get_field( 'other' ); ?>
 							<?php if ( $other ) { ?>
 								<img class="img-responsive" src="<?php echo $other['url']; ?>" alt="<?php echo $other['alt']; ?>" />

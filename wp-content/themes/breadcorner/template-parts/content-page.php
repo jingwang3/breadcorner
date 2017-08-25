@@ -31,7 +31,7 @@
 			</div>
 			<div class="categories">
 				<div class="row">
-					<div class="col-md-4 no-padding cat-item cat-bread">
+					<div class="col-sm-6 col-md-4 no-padding cat-item cat-bread">
 						<a href="/products/bread">
 							<span>Bread</span>
 							<?php $bread = get_field( 'bread' ); ?>
@@ -42,7 +42,7 @@
 							<?php } ?>
 						</a>
 					</div>
-					<div class="col-md-4 no-padding cat-item cat-cake">
+					<div class="col-sm-6 col-md-4 no-padding cat-item cat-cake">
 						<a href="/products/cake">
 							<span>Cake</span>
 							<?php $cake = get_field( 'cake' ); ?>
@@ -53,7 +53,7 @@
 							<?php } ?>
 						</a>
 					</div>
-					<div class="col-md-4 no-padding cat-item cat-cookie">
+					<div class="col-sm-6 col-md-4 no-padding cat-item cat-cookie">
 						<a href="/products/cookie">
 							<span>Cookie</span>
 							<?php $cookie = get_field( 'cookie' ); ?>
@@ -64,9 +64,7 @@
 							<?php } ?>
 						</a>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 no-padding cat-item cat-loaf">
+					<div class="col-sm-6 col-md-4 no-padding cat-item cat-loaf">
 						<a href="/products/loaf">
 							<span>Loaf</span>
 							<?php $loaf = get_field( 'loaf' ); ?>
@@ -77,7 +75,7 @@
 							<?php } ?>
 						</a>
 					</div>
-					<div class="col-md-4 no-padding cat-item cat-pastry">
+					<div class="col-sm-6 col-md-4 no-padding cat-item cat-pastry">
 						<a href="/products/pastry">
 							<span>Pastry</span>
 							<?php $pastry = get_field( 'pastry' ); ?>
@@ -88,7 +86,7 @@
 							<?php } ?>
 						</a>
 					</div>
-					<div class="col-md-4 no-padding cat-item cat-other">
+					<div class="col-sm-6 col-md-4 no-padding cat-item cat-other">
 						<a href="/products">
 							<span>Other</span>
 							<?php $other = get_field( 'other' ); ?>

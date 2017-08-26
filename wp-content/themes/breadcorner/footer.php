@@ -36,7 +36,7 @@
             <div class="site-info">
                 &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
                 <span class="sep"> | </span>
-                <a class="credits" href="https://afterimagedesigns.com/" target="_blank" title="Wordpress Technical Support" alt="Wordpress Technical Support"><?php echo esc_html__('Wordpress Technical Support','wp-bootstrap-starter'); ?></a>
+                <a class="credits" href="http://quadrastudio.us/" target="_blank" title="Supported by QuadraStudio" alt=""><?php echo esc_html__('Supported by QuadraStudio','wp-bootstrap-starter'); ?></a>
 
             </div><!-- close .site-info -->
 		</div>

@@ -39,7 +39,7 @@
 				<div class="container">
 					<h2 class="text-center product-title"><span class="inline-block"><?php echo the_title(); ?></span><span class="chinese-name"><?php the_field( 'chinese_name' ); ?></span></h2>
 					<p class="product-desc text-center"><?php the_field( 'description' ); ?></p>
-					<p class="product-price small"><strong>Price:</strong> <?php the_field( 'price' ); ?></p>
+					<p class="product-price text-right"><strong>Price:</strong> <?php the_field( 'price' ); ?></p>
 					<p class="text-center"><a href="/online-order" class="btn btn-primary">Order Now</a></p>
 					<h3>Other Products</h3>
 					<ul>

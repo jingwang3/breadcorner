@@ -27,6 +27,7 @@
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
+		<?php echo get_post_type(); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php

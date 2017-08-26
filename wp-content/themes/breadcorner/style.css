@@ -329,7 +329,6 @@ header#masthead {
 
 .navbar-brand {
   height: auto;
-  box-shadow: 0 8px 6px -6px black;
 }
 
 .navbar-toggle .icon-bar {
@@ -982,6 +981,10 @@ header#masthead {
     	top: 0;
     	padding: 0;
   }
+  
+  .navbar-brand img{
+      box-shadow: 0 8px 6px -6px black;
+  }
 }
 
 .navbar-brand img{
@@ -1069,12 +1072,12 @@ header#masthead {
   filter: none;
 }
 
-.entry-footer{
+.site-footer{
   padding-top:50px;
   background-color: #f5deb3;
   border-bottom: 1px dashed black;
 }
 
-.entry-footer h3{
+.site-footer h3{
   color:#6a3934;
 }

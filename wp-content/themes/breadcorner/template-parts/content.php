@@ -35,11 +35,14 @@
 				<div class="banner">
 					<img class="img-responsive" src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt']; ?>" />
 				</div>
+			<?php } ?>
 				<div class="container">
 					<h2 class="text-center product-title"><span class="inline-block"><?php echo the_title(); ?></span><span class="chinese-name"><?php the_field( 'chinese_name' ); ?></span></h2>
-					<p class="product-desc"><?php the_field( 'description' ); ?></p>					
+					<p class="product-desc"><?php the_field( 'description' ); ?></p>
+					<ul>
+						<?php wp_list_pages( array( 'post_type' => 'bread' ) ); ?>
+					</ul>
 				</div>
-			<?php } ?>
 		<?php endif; ?>
 		<?php
         if ( is_single() ) :

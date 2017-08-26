@@ -1109,4 +1109,12 @@ body.single-bread .entry-header{
   font-size: 2.5em;
   border-bottom: 3px dashed;
   padding-bottom: 20px;
+  line-height: 1;
+}
+
+span.chinese-name:before {
+    content: "|";
+    color: #c5943b;
+    padding: 10px;
+    font-weight: normal;
 }

@@ -1110,6 +1110,7 @@ body.single-bread .entry-header{
   border-bottom: 3px dashed;
   padding-bottom: 20px;
   line-height: 1;
+  margin-bottom: 10px;
 }
 
 span.chinese-name:before {

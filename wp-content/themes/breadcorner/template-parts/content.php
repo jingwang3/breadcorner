@@ -15,7 +15,7 @@
 	</div>
 	<header class="entry-header">
 		<?php
-		if ( is_single() ) :
+		if ( 'products' !== get_post_type() && is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
@@ -27,7 +27,6 @@
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
-		<?php echo get_post_type(); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php

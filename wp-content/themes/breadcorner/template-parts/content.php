@@ -36,7 +36,7 @@
 					<img class="img-responsive" src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt']; ?>" />
 				</div>
 				<div class="container">
-					<h2 class="text-center product-title"><span class="inline-block"><?php echo the_title(); ?></span> | <?php the_field( 'chinese_name' ); ?></h2>
+					<h2 class="text-center product-title"><span class="inline-block"><?php echo the_title(); ?></span><span class="chinese-name"><?php the_field( 'chinese_name' ); ?></span></h2>
 					<p class="product-desc"><?php the_field( 'description' ); ?></p>					
 				</div>
 			<?php } ?>

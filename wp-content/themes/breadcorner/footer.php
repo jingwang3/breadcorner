@@ -16,7 +16,7 @@
 	</div><!-- #content -->
     <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="row">
+		<div class="row no-margin">
 			<div class="col-md-4 text-center">
 				<h3>Opening Hours</h3>
 				<span>Mon – Sunday  9AM - 8PM</span>					

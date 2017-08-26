@@ -30,7 +30,7 @@
 				<a href="/online-order" class="btn btn-primary btn-lg">Order Now</a>
 			</div>
 			<div class="categories">
-				<div class="row">
+				<div class="row no-margin">
 					<div class="col-sm-6 col-md-4 no-padding cat-item cat-bread">
 						<a href="/products/bread">
 							<span>Bread</span>

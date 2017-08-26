@@ -1087,3 +1087,9 @@ header#masthead {
 .site-footer h3{
   color:#6a3934;
 }
+
+body.single-bread .entry-header{
+  display: none;
+}
+
+

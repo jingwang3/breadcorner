@@ -32,13 +32,13 @@
 		<?php if ( 'bread' === get_post_type() ) : ?>
 			<?php $product_image = get_field( 'product_image' ); ?>
 			<?php if ( $product_image ) { ?>
-				<div class="row">
-					<div class="banner">
-						<img class="img-responsive" src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt']; ?>" />
-					</div>
+				<div class="banner">
+					<img class="img-responsive" src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt']; ?>" />
 				</div>
-				<h2 class="text-center"><?php echo the_title(); ?> | <?php the_field( 'chinese_name' ); ?></h2>
-				<p><?php the_field( 'description' ); ?></p>
+				<div class="container">
+					<h2 class="text-center product-title"><?php echo the_title(); ?> | <?php the_field( 'chinese_name' ); ?></h2>
+					<p class="product-desc"><?php the_field( 'description' ); ?></p>					
+				</div>
 			<?php } ?>
 		<?php endif; ?>
 		<?php

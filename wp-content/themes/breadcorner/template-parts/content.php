@@ -15,7 +15,7 @@
 	</div>
 	<header class="entry-header">
 		<?php
-		if ( 'products' !== get_post_type() && is_single() ) :
+		if (is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
@@ -29,6 +29,15 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
+		<?php if ( 'bread' === get_post_type() ) : ?>
+			<?php $product_image = get_field( 'product_image' ); ?>
+			<?php if ( $product_image ) { ?>
+				<div class="row no-margin">
+					<img src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt']; ?>" />
+				</div>
+				<h2><?php echo the_title(); ?> | <?php the_field( 'chinese_name' ); ?></h2>
+			<?php } ?>
+		<?php endif; ?>
 		<?php
         if ( is_single() ) :
 			the_content();

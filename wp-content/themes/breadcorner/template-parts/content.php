@@ -42,7 +42,7 @@
 					<h3>More</h3>
 					<ul>
 						<?php wp_list_pages( array(
-						    'post_type' => 'bread'
+						    'post_type' => get_post_type(),
 						    'title_li' => ''
 						)); ?>						
 					</ul>

@@ -1092,4 +1092,10 @@ body.single-bread .entry-header{
   display: none;
 }
 
-
+.product-title{
+  color: #6a3934;
+  padding-top: 45px;
+  font-size: 2.75em;
+  border-bottom: 3px dashed;
+  padding-bottom: 20px;
+}

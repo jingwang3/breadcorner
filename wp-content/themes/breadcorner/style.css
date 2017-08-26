@@ -1072,10 +1072,12 @@ header#masthead {
   filter: none;
 }
 
-.site-footer{
-  padding-top:50px;
-  background-color: #f5deb3;
-  border-bottom: 1px dashed black;
+.site-footer .row{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  /* background-color: #f5deb3; */
+  border-bottom: 1px dashed #f5deb3;
 }
 
 .site-footer h3{

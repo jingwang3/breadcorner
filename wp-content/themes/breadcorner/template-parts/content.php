@@ -29,7 +29,7 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
-		<?php if ( 'bread' === get_post_type() ) : ?>
+		<?php if ( 'bread' === get_post_type() || 'cake' === get_post_type() || 'cookie' === get_post_type() || 'loaf' === get_post_type() || 'pastry' === get_post_type() ) : ?>
 			<?php $product_image = get_field( 'product_image' ); ?>
 			<?php if ( $product_image ) { ?>
 				<div class="banner">
@@ -38,7 +38,8 @@
 			<?php } ?>
 				<div class="container">
 					<h2 class="text-center product-title"><span class="inline-block"><?php echo the_title(); ?></span><span class="chinese-name"><?php the_field( 'chinese_name' ); ?></span></h2>
-					<p class="product-desc"><?php the_field( 'description' ); ?></p>
+					<p class="product-desc text-center"><?php the_field( 'description' ); ?></p>
+					<p class="text-center"><a href="/online-order" class="btn btn-primary">Order Now</a></p>
 					<h3>More</h3>
 					<ul>
 						<?php wp_list_pages( array(

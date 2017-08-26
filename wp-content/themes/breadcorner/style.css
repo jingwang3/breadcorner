@@ -952,6 +952,10 @@ a:focus, a:hover {
   margin: 0;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 /* Custom CSS for Bread Corner*/
 body.home .entry-header{
   display: none;
@@ -1096,6 +1100,13 @@ body.single-bread .entry-header{
   color: #6a3934;
   padding-top: 45px;
   font-size: 2.75em;
+  border-bottom: 3px dashed;
+  padding-bottom: 20px;
+}
+
+.product-desc{
+  color: #333;
+  font-size: 2.5em;
   border-bottom: 3px dashed;
   padding-bottom: 20px;
 }

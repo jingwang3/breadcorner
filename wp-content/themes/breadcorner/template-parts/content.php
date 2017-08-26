@@ -39,8 +39,12 @@
 				<div class="container">
 					<h2 class="text-center product-title"><span class="inline-block"><?php echo the_title(); ?></span><span class="chinese-name"><?php the_field( 'chinese_name' ); ?></span></h2>
 					<p class="product-desc"><?php the_field( 'description' ); ?></p>
+					<h3>More</h3>
 					<ul>
-						<?php wp_list_pages( array( 'post_type' => 'bread' ) ); ?>
+						<?php wp_list_pages( array(
+						    'post_type' => 'bread'
+						    'title_li' => ''
+						); ?>						
 					</ul>
 				</div>
 		<?php endif; ?>

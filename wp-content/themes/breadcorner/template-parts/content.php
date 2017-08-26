@@ -44,7 +44,7 @@
 						<?php wp_list_pages( array(
 						    'post_type' => 'bread'
 						    'title_li' => ''
-						); ?>						
+						)); ?>						
 					</ul>
 				</div>
 		<?php endif; ?>

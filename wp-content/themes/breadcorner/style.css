@@ -1123,3 +1123,11 @@ span.chinese-name:before {
 .banner{
   text-align: center;
 }
+
+.dropdown-menu {
+    background-color: #c99a42;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #f5deb3;
+}

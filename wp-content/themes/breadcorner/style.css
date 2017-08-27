@@ -1092,7 +1092,7 @@ header#masthead {
   color:#6a3934;
 }
 
-body.single-bread .entry-header{
+body.single-bread .entry-header, body.single-cake .entry-header, body.single-cookie .entry-header, body.single-loaf .entry-header, body.single-pastry .entry-header{
   display: none;
 }
 
@@ -1118,4 +1118,8 @@ span.chinese-name:before {
     color: #c5943b;
     padding: 10px;
     font-weight: normal;
+}
+
+.banner{
+  text-align: center;
 }

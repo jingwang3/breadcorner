@@ -1131,11 +1131,3 @@ span.chinese-name:before {
 .dropdown-item:focus, .dropdown-item:hover {
     background-color: #f5deb3;
 }
-
-#masthead .navbar-nav > li a {
-    color: #531f1f;
-}
-
-#masthead .navbar-nav > li > a:focus, #masthead .navbar-nav > li > a:hover {
-    color: #23282d !important;
-}

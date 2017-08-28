@@ -973,8 +973,8 @@ header#masthead {
 
 #content.site-content {
     padding-top: 0;
-	background-color: #fff;
-	padding-bottom: 0;
+  	background-color: #fff;
+  	padding-bottom: 0;
 }
 
 .page-content, .entry-content, .entry-summary {
@@ -1024,7 +1024,7 @@ header#masthead {
   margin-bottom: 0;
 }
 
-.contact-us, .online-order, header#masthead{
+.online-order, header#masthead{
   background-color: #c99a42;
 }
 

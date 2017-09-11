@@ -46,10 +46,39 @@
 						<?php wp_list_pages( array(
 						    'post_type' => get_post_type(),
 						    'title_li' => ''
-						)); ?>						
+						)); ?>
 					</ul>
 				</div>
 		<?php endif; ?>
+		
+		<?php 
+
+		$posts = get_posts(array(
+			'posts_per_page'	=> -1,
+			'post_type'			=> 'bread'
+		));
+		
+		if( $posts ): ?>
+			
+			<ul>
+				
+			<?php foreach( $posts as $post ): 
+				
+				setup_postdata( $post );
+				
+				?>
+				<li>
+					<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+				</li>
+			
+			<?php endforeach; ?>
+			
+			</ul>
+			
+			<?php wp_reset_postdata(); ?>
+		
+		<?php endif; ?>
+		
 		<?php
         if ( is_single() ) :
 			the_content();

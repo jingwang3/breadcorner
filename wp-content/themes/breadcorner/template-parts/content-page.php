@@ -106,7 +106,7 @@
 		<?php endif; ?>
 		
 		<?php if ( is_page('online-order') ) : ?>
-			<div class="online-order container">
+			<div class="online-order-page container">
 				<?php 
 		
 				$posts = get_posts(array(
@@ -127,14 +127,14 @@
 					    </div>
 					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 					      <div class="panel-body">
-							<ul>
+							<ul class="list-group">
 								
 							<?php foreach( $posts as $post ): 
 								
 								setup_postdata( $post );
 								
 								?>
-								<li>
+								<li class="list-group-item">
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
 								</li>
 							

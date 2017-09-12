@@ -110,7 +110,7 @@
 		
 			<div class="online-order-page container">
 				
-				<h2 class="text-primary">Products:</h2>
+				<h2 class="text-primary">Products</h2>
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<?php 
 					$posts = get_posts(array(

@@ -936,6 +936,10 @@ footer#colophon {
   border-color: #ca9942;
 }
 
+.text-primary{
+  color: #6a3934;
+}
+
 a {
     color: #6a3934;
 }
@@ -1141,6 +1145,15 @@ span.chinese-name:before {
   height:200px;
 }
 
+.wpcf7-form p{
+  text-align: center;
+}
+
 .wpcf7-form label{
   width:100%;
+  text-align:left;
+}
+
+.wpcf7-submit{
+  font-size: 2em;
 }

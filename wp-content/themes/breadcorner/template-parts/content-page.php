@@ -318,7 +318,7 @@
 					<?php endif; ?>					
 				</div>
 			
-				<h2>Online Order Form</h2>
+				<h2 class="text-center text-primary">Online Order Form</h2>
 				<?php echo do_shortcode( '[contact-form-7 id="195" title="Online Order"]' ); ?>
 			</div>
 		<?php endif; ?>		

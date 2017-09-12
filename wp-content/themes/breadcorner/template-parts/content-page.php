@@ -107,49 +107,214 @@
 		
 		<?php if ( is_page('online-order') ) : ?>
 			<div class="online-order-page container">
-				<?php 
+				
 		
-				$posts = get_posts(array(
-					'posts_per_page'	=> -1,
-					'post_type'			=> 'bread'
-				));
-				
-				if( $posts ): ?>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<?php 
+					$posts = get_posts(array(
+						'posts_per_page'	=> -1,
+						'post_type'			=> 'bread'
+					));
 					
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					  <div class="panel panel-default accordion-bread">
-					    <div class="panel-heading" role="tab" id="headingOne">
-					      <h4 class="panel-title">
-					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					          Bread
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-					      <div class="panel-body">
-							<ul class="list-group">
+					if( $posts ): ?>
+						
+						  <div class="panel panel-default accordion-bread">
+						    <div class="panel-heading" role="tab" id="headingOne">
+						      <h4 class="panel-title">
+						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          Bread
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						      <div class="panel-body">
+								<ul class="list-group">
+									
+								<?php foreach( $posts as $post ): 
+									
+									setup_postdata( $post );
+									
+									?>
+									<li class="list-group-item">
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+									</li>
 								
-							<?php foreach( $posts as $post ): 
+								<?php endforeach; ?>
 								
-								setup_postdata( $post );
-								
-								?>
-								<li class="list-group-item">
-									<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
-								</li>
-							
-							<?php endforeach; ?>
-							
-							</ul>					        
-					      </div>
-					    </div>
-					  </div>
-					</div>					
+								</ul>					        
+						      </div>
+						    </div>
+						  </div>
+											
+						
+						<?php wp_reset_postdata(); ?>
 					
-					<?php wp_reset_postdata(); ?>
-				
-				<?php endif; ?>
-			
+					<?php endif; ?>
+					
+					<?php 
+					$posts = get_posts(array(
+						'posts_per_page'	=> -1,
+						'post_type'			=> 'cake'
+					));
+					
+					if( $posts ): ?>
+						
+						  <div class="panel panel-default accordion-cake">
+						    <div class="panel-heading" role="tab" id="headingTwo">
+						      <h4 class="panel-title">
+						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						          Bread
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						      <div class="panel-body">
+								<ul class="list-group">
+									
+								<?php foreach( $posts as $post ): 
+									
+									setup_postdata( $post );
+									
+									?>
+									<li class="list-group-item">
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+									</li>
+								
+								<?php endforeach; ?>
+								
+								</ul>					        
+						      </div>
+						    </div>
+						  </div>
+											
+						
+						<?php wp_reset_postdata(); ?>
+					
+					<?php endif; ?>
+					
+					<?php 
+					$posts = get_posts(array(
+						'posts_per_page'	=> -1,
+						'post_type'			=> 'cookie'
+					));
+					
+					if( $posts ): ?>
+						
+						  <div class="panel panel-default accordion-cookie">
+						    <div class="panel-heading" role="tab" id="headingThree">
+						      <h4 class="panel-title">
+						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						          Bread
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						      <div class="panel-body">
+								<ul class="list-group">
+									
+								<?php foreach( $posts as $post ): 
+									
+									setup_postdata( $post );
+									
+									?>
+									<li class="list-group-item">
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+									</li>
+								
+								<?php endforeach; ?>
+								
+								</ul>					        
+						      </div>
+						    </div>
+						  </div>
+											
+						
+						<?php wp_reset_postdata(); ?>
+					
+					<?php endif; ?>
+					
+					<?php
+					$posts = get_posts(array(
+						'posts_per_page'	=> -1,
+						'post_type'			=> 'loaf'
+					));
+					
+					if( $posts ): ?>
+						
+						  <div class="panel panel-default accordion-loaf">
+						    <div class="panel-heading" role="tab" id="headingFour">
+						      <h4 class="panel-title">
+						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+						          Bread
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+						      <div class="panel-body">
+								<ul class="list-group">
+									
+								<?php foreach( $posts as $post ): 
+									
+									setup_postdata( $post );
+									
+									?>
+									<li class="list-group-item">
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+									</li>
+								
+								<?php endforeach; ?>
+								
+								</ul>					        
+						      </div>
+						    </div>
+						  </div>
+											
+						
+						<?php wp_reset_postdata(); ?>
+					
+					<?php endif; ?>
+					
+					<?php
+					$posts = get_posts(array(
+						'posts_per_page'	=> -1,
+						'post_type'			=> 'pastry'
+					));
+					
+					if( $posts ): ?>
+						
+						  <div class="panel panel-default accordion-pastry">
+						    <div class="panel-heading" role="tab" id="headingFive">
+						      <h4 class="panel-title">
+						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+						          Bread
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
+						      <div class="panel-body">
+								<ul class="list-group">
+									
+								<?php foreach( $posts as $post ): 
+									
+									setup_postdata( $post );
+									
+									?>
+									<li class="list-group-item">
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+									</li>
+								
+								<?php endforeach; ?>
+								
+								</ul>					        
+						      </div>
+						    </div>
+						  </div>
+											
+						
+						<?php wp_reset_postdata(); ?>
+					
+					<?php endif; ?>					
+				</div>
 			
 				<h2>Online Order Form</h2>
 				<?php echo do_shortcode( '[contact-form-7 id="195" title="Online Order"]' ); ?>

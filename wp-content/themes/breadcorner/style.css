@@ -937,7 +937,7 @@ footer#colophon {
 }
 
 .text-primary{
-  color: #6a3934;
+  color: #6a3934 !important;
 }
 
 a {

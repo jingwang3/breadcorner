@@ -1140,6 +1140,11 @@ span.chinese-name:before {
   padding-top: 50px;
 }
 
+.online-order-page h2{
+    margin-top: 35px;
+    border-bottom: 2px dashed;
+}
+
 .space-holder{
   width:100%;
   height:200px;

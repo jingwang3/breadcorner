@@ -110,7 +110,7 @@
 		
 			<div class="online-order-page container">
 				
-		
+				<h2 class="text-primary">Products:</h2>
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<?php 
 					$posts = get_posts(array(
@@ -138,7 +138,7 @@
 									
 									?>
 									<li class="list-group-item">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
 									</li>
 								
 								<?php endforeach; ?>
@@ -179,7 +179,7 @@
 									
 									?>
 									<li class="list-group-item">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
 									</li>
 								
 								<?php endforeach; ?>
@@ -220,7 +220,7 @@
 									
 									?>
 									<li class="list-group-item">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
 									</li>
 								
 								<?php endforeach; ?>
@@ -261,7 +261,7 @@
 									
 									?>
 									<li class="list-group-item">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
 									</li>
 								
 								<?php endforeach; ?>
@@ -302,7 +302,7 @@
 									
 									?>
 									<li class="list-group-item">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
 									</li>
 								
 								<?php endforeach; ?>
@@ -318,7 +318,7 @@
 					<?php endif; ?>					
 				</div>
 			
-				<h2 class="text-center text-primary">Online Order Form</h2>
+				<h2 class="text-primary">Online Order Form</h2>
 				<?php echo do_shortcode( '[contact-form-7 id="195" title="Online Order"]' ); ?>
 			</div>
 		<?php endif; ?>		

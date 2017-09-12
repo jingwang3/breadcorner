@@ -106,35 +106,54 @@
 		<?php endif; ?>
 		
 		<?php if ( is_page('online-order') ) : ?>
+			<div class="online-order container">
+				<?php 
 		
-			<?php 
-	
-			$posts = get_posts(array(
-				'posts_per_page'	=> -1,
-				'post_type'			=> 'bread'
-			));
-			
-			if( $posts ): ?>
+				$posts = get_posts(array(
+					'posts_per_page'	=> -1,
+					'post_type'			=> 'bread'
+				));
 				
-				<ul>
+				if( $posts ): ?>
 					
-				<?php foreach( $posts as $post ): 
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					  <div class="panel panel-default accordion-bread">
+					    <div class="panel-heading" role="tab" id="headingOne">
+					      <h4 class="panel-title">
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Bread
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					      <div class="panel-body">
+							<ul>
+								
+							<?php foreach( $posts as $post ): 
+								
+								setup_postdata( $post );
+								
+								?>
+								<li>
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+								</li>
+							
+							<?php endforeach; ?>
+							
+							</ul>					        
+					      </div>
+					    </div>
+					  </div>
+					</div>					
 					
-					setup_postdata( $post );
-					
-					?>
-					<li>
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
-					</li>
+					<?php wp_reset_postdata(); ?>
 				
-				<?php endforeach; ?>
-				
-				</ul>
-				
-				<?php wp_reset_postdata(); ?>
+				<?php endif; ?>
 			
-			<?php endif; ?>
 			
+				<h2>Online Order Form</h2>
+				<?php echo do_shortcode( '[contact-form-7 id="195" title="Online Order"]' ); ?>
+			</div>
 		<?php endif; ?>		
 		
 		<?php

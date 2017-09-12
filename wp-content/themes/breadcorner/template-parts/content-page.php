@@ -106,7 +106,7 @@
 		<?php endif; ?>
 		
 		<?php if ( is_page('online-order') ) : ?>
-			<div class="online-order space-holder"></div>
+			<div class="online-order space-holder hidden-mobile"></div>
 		
 			<div class="online-order-page container">
 				
@@ -172,7 +172,7 @@
 						    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 						      <div class="panel-body">
 								<ul class="list-group">
-									
+								
 								<?php foreach( $posts as $post ): 
 									
 									setup_postdata( $post );

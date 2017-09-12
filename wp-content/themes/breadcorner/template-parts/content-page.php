@@ -138,7 +138,7 @@
 									
 									?>
 									<li class="list-group-item">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' ); - <?php the_field( 'price' ); ?></a>
 									</li>
 								
 								<?php endforeach; ?>
@@ -179,7 +179,7 @@
 									
 									?>
 									<li class="list-group-item">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' ); - <?php the_field( 'price' ); ?></a>
 									</li>
 								
 								<?php endforeach; ?>
@@ -220,7 +220,7 @@
 									
 									?>
 									<li class="list-group-item">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' ); - <?php the_field( 'price' ); ?></a>
 									</li>
 								
 								<?php endforeach; ?>
@@ -261,7 +261,7 @@
 									
 									?>
 									<li class="list-group-item">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' ); - <?php the_field( 'price' ); ?></a>
 									</li>
 								
 								<?php endforeach; ?>
@@ -302,7 +302,7 @@
 									
 									?>
 									<li class="list-group-item">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> - <?php the_field( 'price' ); ?></a>
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' ); - <?php the_field( 'price' ); ?></a>
 									</li>
 								
 								<?php endforeach; ?>

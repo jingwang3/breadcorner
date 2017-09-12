@@ -106,6 +106,8 @@
 		<?php endif; ?>
 		
 		<?php if ( is_page('online-order') ) : ?>
+			<div class="online-order space-holder"></div>
+		
 			<div class="online-order-page container">
 				
 		
@@ -163,7 +165,7 @@
 						    <div class="panel-heading" role="tab" id="headingTwo">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-						          Bread
+						          Cake
 						        </a>
 						      </h4>
 						    </div>
@@ -204,7 +206,7 @@
 						    <div class="panel-heading" role="tab" id="headingThree">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-						          Bread
+						          Cookie
 						        </a>
 						      </h4>
 						    </div>
@@ -245,7 +247,7 @@
 						    <div class="panel-heading" role="tab" id="headingFour">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-						          Bread
+						          Loaf
 						        </a>
 						      </h4>
 						    </div>
@@ -286,7 +288,7 @@
 						    <div class="panel-heading" role="tab" id="headingFive">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-						          Bread
+						          Pastry
 						        </a>
 						      </h4>
 						    </div>

@@ -1135,3 +1135,8 @@ span.chinese-name:before {
 .online-order-page{
   padding-top: 200px;
 }
+
+.space-holder{
+  width:100%;
+  height:200px;
+}

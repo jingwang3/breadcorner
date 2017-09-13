@@ -42,7 +42,7 @@
 					<p class="product-price text-right"><strong>Price:</strong> <?php the_field( 'price' ); ?></p>
 					<p class="text-center"><a href="/online-order" class="btn btn-primary">Order Now</a></p>
 					<h3>More in this category:</h3>
-					<ul class="list-group">						
+					<div class="list-group">						
 						<?php 
 							$posts = get_posts(array(
 							'posts_per_page'	=> -1,
@@ -56,9 +56,7 @@
 							setup_postdata( $post );
 							
 							?>
-							<li class="list-group-item">
-								<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?></a>
-							</li>
+								<a class="list-group-item" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?></a>
 							
 							<?php endforeach; ?>
 							

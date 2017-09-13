@@ -41,13 +41,46 @@
 					<p class="product-desc text-center"><?php the_field( 'description' ); ?></p>
 					<p class="product-price text-right"><strong>Price:</strong> <?php the_field( 'price' ); ?></p>
 					<p class="text-center"><a href="/online-order" class="btn btn-primary">Order Now</a></p>
-					<h3>Other Products</h3>
-					<ul>
-						<?php wp_list_pages( array(
-						    'post_type' => get_post_type(),
-						    'title_li' => ''
-						)); ?>
-					</ul>
+					<h3></h3>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							  <div class="panel panel-default">
+							    <div class="panel-heading" role="tab" id="headingOne">
+							      <h4 class="panel-title">
+							        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							          Other Products
+							        </a>
+							      </h4>
+							    </div>
+							    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							      <div class="panel-body">
+									<ul class="list-group">						
+								<?php 
+									$posts = get_posts(array(
+										'posts_per_page'	=> -1,
+										'post_type'			=> get_post_type()
+									));
+									
+									if( $posts ): ?>
+										
+									<?php foreach( $posts as $post ): 
+										
+										setup_postdata( $post );
+										
+										?>
+										<li class="list-group-item">
+											<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+										</li>
+									
+									<?php endforeach; ?>
+
+							<?php wp_reset_postdata(); ?>
+						
+						<?php endif; ?>
+									</ul>					        
+							      </div>
+							    </div>
+							  </div>						
+						</div>
 				</div>
 		<?php endif; ?>
 		

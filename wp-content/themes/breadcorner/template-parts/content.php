@@ -46,12 +46,12 @@
 							  <div class="panel panel-default">
 							    <div class="panel-heading" role="tab" id="headingOne">
 							      <h4 class="panel-title">
-							        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							        <a class="btn btn-default text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 							          Other Products
 							        </a>
 							      </h4>
 							    </div>
-							    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							    <div id="collapseOne" class="panel-collapse in collapse show" role="tabpanel" aria-labelledby="headingOne">
 							      <div class="panel-body">
 									<ul class="list-group">						
 								<?php 

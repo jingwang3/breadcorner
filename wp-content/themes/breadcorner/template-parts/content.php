@@ -47,7 +47,7 @@
 							    <div class="panel-heading" role="tab" id="headingOne">
 							      <h4 class="panel-title">
 							        <a class="btn btn-default text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							          Other Products
+							          More in this category:
 							        </a>
 							      </h4>
 							    </div>
@@ -68,7 +68,7 @@
 										
 										?>
 										<li class="list-group-item">
-											<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+											<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?></a>
 										</li>
 									
 									<?php endforeach; ?>

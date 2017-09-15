@@ -153,46 +153,6 @@
 					
 					<?php endif; ?>
 					
-					<?php 
-					$posts = get_posts(array(
-						'posts_per_page'	=> -1,
-						'post_type'			=> 'cake'
-					));
-					
-					if( $posts ): ?>
-						
-						  <div class="panel panel-default accordion-cake">
-						    <div class="panel-heading" role="tab" id="headingTwo">
-						      <h4 class="panel-title">
-						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-						          Cake
-						        </a>
-						      </h4>
-						    </div>
-						    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-						      <div class="panel-body">
-								<ul class="list-group">
-								
-								<?php foreach( $posts as $post ): 
-									
-									setup_postdata( $post );
-									
-									?>
-									<li class="list-group-item">
-										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
-									</li>
-								
-								<?php endforeach; ?>
-								
-								</ul>					        
-						      </div>
-						    </div>
-						  </div>
-											
-						
-						<?php wp_reset_postdata(); ?>
-					
-					<?php endif; ?>
 					
 					<?php 
 					$posts = get_posts(array(

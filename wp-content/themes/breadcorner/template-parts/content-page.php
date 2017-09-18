@@ -115,7 +115,7 @@
 				<?php 
 					$posts = get_posts(array(
 						'posts_per_page'	=> -1,
-						'group'			=> 'a'
+						'category'			=> 'group_a'
 					));
 					
 					if( $posts ): ?>

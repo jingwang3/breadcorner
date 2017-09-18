@@ -115,10 +115,10 @@
 				<?php 
 					$posts = get_posts(array(
 						'posts_per_page'	=> -1,
-						'category'			=> 11
+						'post_type'			=> array('bread','cookie','loaf','pastry')
 					));
 					
-					if( $posts ): ?>
+					if( $posts && the_field( 'group' ) == "a" ): ?>
 						
 						  <div class="panel panel-default accordion-bread">
 						    <div class="panel-heading" role="tab" id="headingOne">
@@ -138,7 +138,7 @@
 									
 									?>
 									<li class="list-group-item">
-										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_field( 'group' ); ?> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
 									</li>
 								
 								<?php endforeach; ?>

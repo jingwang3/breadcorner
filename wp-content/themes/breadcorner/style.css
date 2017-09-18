@@ -922,6 +922,10 @@ footer#colophon {
   }
 }
 
+.uppercase{
+  text-transform: uppercase !important;
+}
+
 /*bootstrap override*/
 
 .btn-primary {

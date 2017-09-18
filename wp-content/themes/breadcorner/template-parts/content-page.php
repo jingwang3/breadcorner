@@ -139,7 +139,7 @@
 									?>
 									<?php if( get_field( 'group' ) == 'a' ): ?>
 										<li class="list-group-item">
-											<a target="_blank" href="<?php the_permalink(); ?>"><?php the_field( 'group' ); ?> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
 										</li>
 									<?php endif; ?>
 								<?php endforeach; ?>
@@ -158,7 +158,7 @@
 					<?php 
 					$posts = get_posts(array(
 						'posts_per_page'	=> -1,
-						'group'			=> 'b'
+						'post_type'			=> array('bread','cookie','loaf','pastry')
 					));
 					
 					if( $posts ): ?>
@@ -180,9 +180,11 @@
 									setup_postdata( $post );
 									
 									?>
-									<li class="list-group-item">
-										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
-									</li>
+									<?php if( get_field( 'group' ) == 'b' ): ?>
+										<li class="list-group-item">
+											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+										</li>
+									<?php endif; ?>
 								
 								<?php endforeach; ?>
 								
@@ -199,7 +201,7 @@
 					<?php
 					$posts = get_posts(array(
 						'posts_per_page'	=> -1,
-						'group'			=> 'c'
+						'post_type'			=> array('bread','cookie','loaf','pastry')
 					));
 					
 					if( $posts ): ?>
@@ -221,9 +223,11 @@
 									setup_postdata( $post );
 									
 									?>
-									<li class="list-group-item">
-										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
-									</li>
+									<?php if( get_field( 'group' ) == 'c' ): ?>
+										<li class="list-group-item">
+											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+										</li>
+									<?php endif; ?>
 								
 								<?php endforeach; ?>
 								
@@ -240,7 +244,7 @@
 					<?php
 					$posts = get_posts(array(
 						'posts_per_page'	=> -1,
-						'group'			=> 'd'
+						'post_type'			=> array('bread','cookie','loaf','pastry')
 					));
 					
 					if( $posts ): ?>
@@ -262,9 +266,11 @@
 									setup_postdata( $post );
 									
 									?>
-									<li class="list-group-item">
-										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
-									</li>
+									<?php if( get_field( 'group' ) == 'd' ): ?>
+										<li class="list-group-item">
+											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+										</li>
+									<?php endif; ?>
 								
 								<?php endforeach; ?>
 								

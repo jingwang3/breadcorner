@@ -115,6 +115,7 @@
 				<?php 
 					$posts = get_posts(array(
 						'posts_per_page'	=> -1,
+						'post_type'			=> array('bread', 'loaf'),
 						'category'			=> 'group_a'
 					));
 					

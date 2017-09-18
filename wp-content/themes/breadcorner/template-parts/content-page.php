@@ -124,7 +124,7 @@
 						    <div class="panel-heading" role="tab" id="headingOne">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          Group A
+						          Group A - <span><?php the_field( 'group_a_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>
@@ -167,7 +167,7 @@
 						    <div class="panel-heading" role="tab" id="headingThree">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-						          Group B
+						          Group B - <span><?php the_field( 'group_b_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>
@@ -210,7 +210,7 @@
 						    <div class="panel-heading" role="tab" id="headingFour">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-						          Group C
+						          Group C - <span><?php the_field( 'group_c_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>
@@ -253,7 +253,7 @@
 						    <div class="panel-heading" role="tab" id="headingFive">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-						          Group D
+						          Group D - <span><?php the_field( 'group_d_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>
@@ -286,6 +286,7 @@
 				</div>
 			
 				<h2 class="text-primary">Online Order Form</h2>
+				<p class="order-instructions"><?php the_field( 'order_instructions' ); ?></p>
 				<?php echo do_shortcode( '[contact-form-7 id="195" title="Online Order"]' ); ?>
 			</div>
 		<?php endif; ?>		

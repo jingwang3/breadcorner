@@ -118,7 +118,7 @@
 						'post_type'			=> array('bread','cookie','loaf','pastry')
 					));
 					
-					if( $posts && get_field( 'group' ) == 'a' ): ?>
+					if( $posts ): ?>
 						
 						  <div class="panel panel-default accordion-bread">
 						    <div class="panel-heading" role="tab" id="headingOne">

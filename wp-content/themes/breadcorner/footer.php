@@ -17,20 +17,24 @@
     <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="row no-margin">
-			<div class="col-md-4 text-center">
+			<div class="col-md-3 text-center">
 				<h3>Opening Hours</h3>
 				<span>Mon – Sunday  9AM - 8:30PM</span>					
 			</div>
-			<div class="col-md-4 text-center">
-				<h3>Phone & Email</h3>
+			<div class="col-md-3 text-center">
+				<h3>Contact</h3>
 				<span><a href="tel:2403286547">(240) 328-6547</a> 
-				<br /><a href="mailto:breadcorner2009@gmail.com">breadcorner2009@gmail.com</a></span>					
+				<br /><a href="mailto:breadcorner2009@gmail.com">breadcorner2009@gmail.com</a></span>
 			</div>
-			<div class="col-md-4 text-center">
+			<div class="col-md-3 text-center">
 				<h3>Address</h3>
 				<span>591 Hungerford Drive, 
 				<br />Rockville, MD, 20850</span>					
-			</div>				
+			</div>
+			<div class="col-md-3 text-center">
+				<h3>Social Media</h3>
+				<a href="https://www.facebook.com/Bread-Corner-1399505216974382/" target="_blank"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+			</div>			
 		</div>	    
 		<div class="container">
             <div class="site-info">

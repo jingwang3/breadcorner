@@ -139,7 +139,7 @@
 									?>
 									<?php if( get_field( 'group' ) == 'a' ): ?>
 										<li class="list-group-item">
-											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <span class="item-name"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?></span></a>
 										</li>
 									<?php endif; ?>
 								<?php endforeach; ?>
@@ -182,7 +182,7 @@
 									?>
 									<?php if( get_field( 'group' ) == 'b' ): ?>
 										<li class="list-group-item">
-											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <span class="item-name"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?></span></a>
 										</li>
 									<?php endif; ?>
 								
@@ -225,7 +225,7 @@
 									?>
 									<?php if( get_field( 'group' ) == 'c' ): ?>
 										<li class="list-group-item">
-											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <span class="item-name"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?></span></a>
 										</li>
 									<?php endif; ?>
 								
@@ -268,7 +268,7 @@
 									?>
 									<?php if( get_field( 'group' ) == 'd' ): ?>
 										<li class="list-group-item">
-											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+											<a target="_blank" href="<?php the_permalink(); ?>"><span class="label label-danger uppercase"><?php the_field( 'group' ); ?><?php the_field( 'code_number' ); ?></span> - <span class="item-name"><?php the_title(); ?> | <?php the_field( 'chinese_name' );?></span></a>
 										</li>
 									<?php endif; ?>
 								

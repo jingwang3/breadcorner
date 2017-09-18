@@ -115,7 +115,7 @@
 				<?php 
 					$posts = get_posts(array(
 						'posts_per_page'	=> -1,
-						'post_type'			=> 'bread'
+						'group'			=> 'a'
 					));
 					
 					if( $posts ): ?>
@@ -124,7 +124,7 @@
 						    <div class="panel-heading" role="tab" id="headingOne">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          Bread
+						          Group A
 						        </a>
 						      </h4>
 						    </div>
@@ -157,7 +157,7 @@
 					<?php 
 					$posts = get_posts(array(
 						'posts_per_page'	=> -1,
-						'post_type'			=> 'cookie'
+						'group'			=> 'b'
 					));
 					
 					if( $posts ): ?>
@@ -166,7 +166,7 @@
 						    <div class="panel-heading" role="tab" id="headingThree">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-						          Cookie
+						          Group B
 						        </a>
 						      </h4>
 						    </div>
@@ -198,7 +198,7 @@
 					<?php
 					$posts = get_posts(array(
 						'posts_per_page'	=> -1,
-						'post_type'			=> 'loaf'
+						'group'			=> 'c'
 					));
 					
 					if( $posts ): ?>
@@ -207,7 +207,7 @@
 						    <div class="panel-heading" role="tab" id="headingFour">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-						          Loaf
+						          Group C
 						        </a>
 						      </h4>
 						    </div>
@@ -239,7 +239,7 @@
 					<?php
 					$posts = get_posts(array(
 						'posts_per_page'	=> -1,
-						'post_type'			=> 'pastry'
+						'group'			=> 'd'
 					));
 					
 					if( $posts ): ?>
@@ -248,7 +248,7 @@
 						    <div class="panel-heading" role="tab" id="headingFive">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-						          Pastry
+						          Group D
 						        </a>
 						      </h4>
 						    </div>

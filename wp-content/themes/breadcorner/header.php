@@ -16,7 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<meta name="description" content="NIMHD oversees several programs central to NIH’s mission of uncovering new knowledge that will lead to better health for everyone.">
+<meta name="description" content="<?php the_field( 'description' ); ?>">
 <meta property="og:title" content="><?php the_title(); ?> | <?php the_field( 'chinese_name' ); ?>" />
 <meta property="og:type" content="website" />
 <?php $product_image = get_field( 'product_image' ); ?>

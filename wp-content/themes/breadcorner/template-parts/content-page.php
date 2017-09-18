@@ -137,10 +137,11 @@
 									setup_postdata( $post );
 									
 									?>
-									<li class="list-group-item">
-										<a target="_blank" href="<?php the_permalink(); ?>"><?php the_field( 'group' ); ?> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
-									</li>
-								
+									<?php if( get_field( 'group' ) == 'a' ): ?>
+										<li class="list-group-item">
+											<a target="_blank" href="<?php the_permalink(); ?>"><?php the_field( 'group' ); ?> - <?php the_title(); ?> | <?php the_field( 'chinese_name' );?> - <?php the_field( 'price' ); ?></a>
+										</li>
+									<?php endif; ?>
 								<?php endforeach; ?>
 								
 								</ul>					        

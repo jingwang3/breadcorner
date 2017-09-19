@@ -115,7 +115,10 @@
 				<?php 
 					$posts = get_posts(array(
 						'posts_per_page'	=> -1,
-						'post_type'			=> array('bread','cookie','loaf','pastry')
+						'post_type'			=> array('bread','cookie','loaf','pastry'),
+						'meta_key'			=> 'code_number',
+						'orderby'			=> 'meta_value',
+						'order'				=> 'DESC'
 					));
 					
 					if( $posts ): ?>
@@ -124,7 +127,7 @@
 						    <div class="panel-heading" role="tab" id="headingOne">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          Group A - <span><?php the_field( 'group_a_description' ); ?></span>
+						          A - <span><?php the_field( 'group_a_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>
@@ -149,17 +152,12 @@
 						    </div>
 						  </div>
 											
-						
-						<?php wp_reset_postdata(); ?>
 					
 					<?php endif; ?>
 					
 					
 					<?php 
-					$posts = get_posts(array(
-						'posts_per_page'	=> -1,
-						'post_type'			=> array('bread','cookie','loaf','pastry')
-					));
+
 					
 					if( $posts ): ?>
 						
@@ -167,7 +165,7 @@
 						    <div class="panel-heading" role="tab" id="headingThree">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-						          Group B - <span><?php the_field( 'group_b_description' ); ?></span>
+						          B - <span><?php the_field( 'group_b_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>
@@ -193,24 +191,18 @@
 						    </div>
 						  </div>
 											
-						
-						<?php wp_reset_postdata(); ?>
 					
 					<?php endif; ?>
 					
 					<?php
-					$posts = get_posts(array(
-						'posts_per_page'	=> -1,
-						'post_type'			=> array('bread','cookie','loaf','pastry')
-					));
-					
+
 					if( $posts ): ?>
 						
 						  <div class="panel panel-default accordion-loaf">
 						    <div class="panel-heading" role="tab" id="headingFour">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-						          Group C - <span><?php the_field( 'group_c_description' ); ?></span>
+						          C - <span><?php the_field( 'group_c_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>
@@ -235,17 +227,11 @@
 						      </div>
 						    </div>
 						  </div>
-											
-						
-						<?php wp_reset_postdata(); ?>
+
 					
 					<?php endif; ?>
 					
 					<?php
-					$posts = get_posts(array(
-						'posts_per_page'	=> -1,
-						'post_type'			=> array('bread','cookie','loaf','pastry')
-					));
 					
 					if( $posts ): ?>
 						
@@ -253,7 +239,7 @@
 						    <div class="panel-heading" role="tab" id="headingFive">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-						          Group D - <span><?php the_field( 'group_d_description' ); ?></span>
+						          D - <span><?php the_field( 'group_d_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>

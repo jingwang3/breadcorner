@@ -118,7 +118,7 @@
 						'post_type'			=> array('bread','cookie','loaf','pastry'),
 						'meta_key'			=> 'code_number',
 						'orderby'			=> 'meta_value',
-						'order'				=> 'ASCE'
+						'order'				=> 'ASC'
 					));
 					
 					if( $posts ): ?>
@@ -163,7 +163,7 @@
 						'post_type'			=> array('bread','cookie','loaf','pastry'),
 						'meta_key'			=> 'code_number',
 						'orderby'			=> 'meta_value',
-						'order'				=> 'ASCE'
+						'order'				=> 'ASC'
 					));
 					
 					if( $posts ): ?>
@@ -209,7 +209,7 @@
 						'post_type'			=> array('bread','cookie','loaf','pastry'),
 						'meta_key'			=> 'code_number',
 						'orderby'			=> 'meta_value',
-						'order'				=> 'ASCE'
+						'order'				=> 'ASC'
 					));
 					
 					if( $posts ): ?>
@@ -255,7 +255,7 @@
 						'post_type'			=> array('bread','cookie','loaf','pastry'),
 						'meta_key'			=> 'code_number',
 						'orderby'			=> 'meta_value',
-						'order'				=> 'ASCE'
+						'order'				=> 'ASC'
 					));
 					
 					if( $posts ): ?>

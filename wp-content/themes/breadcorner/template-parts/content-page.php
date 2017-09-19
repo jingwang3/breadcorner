@@ -117,8 +117,7 @@
 						'posts_per_page'	=> -1,
 						'post_type'			=> array('bread','cookie','loaf','pastry'),
 						'meta_key'			=> 'code_number',
-						'orderby'			=> 'meta_value',
-						'order'				=> 'ASCE'
+						'orderby'			=> 'meta_value'
 					));
 					
 					if( $posts ): ?>

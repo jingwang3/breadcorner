@@ -117,7 +117,7 @@
 						'posts_per_page'	=> -1,
 						'post_type'			=> array('bread','cookie','loaf','pastry'),
 						'meta_key'			=> 'code_number',
-						'orderby'			=> 'meta_value',
+						'orderby'			=> 'meta_value_num',
 						'order'				=> 'ASC'
 					));
 					
@@ -162,7 +162,7 @@
 						'posts_per_page'	=> -1,
 						'post_type'			=> array('bread','cookie','loaf','pastry'),
 						'meta_key'			=> 'code_number',
-						'orderby'			=> 'meta_value',
+						'orderby'			=> 'meta_value_num',
 						'order'				=> 'ASC'
 					));
 					
@@ -208,7 +208,7 @@
 						'posts_per_page'	=> -1,
 						'post_type'			=> array('bread','cookie','loaf','pastry'),
 						'meta_key'			=> 'code_number',
-						'orderby'			=> 'meta_value',
+						'orderby'			=> 'meta_value_num',
 						'order'				=> 'ASC'
 					));
 					
@@ -254,7 +254,7 @@
 						'posts_per_page'	=> -1,
 						'post_type'			=> array('bread','cookie','loaf','pastry'),
 						'meta_key'			=> 'code_number',
-						'orderby'			=> 'meta_value',
+						'orderby'			=> 'meta_value_num',
 						'order'				=> 'ASC'
 					));
 					

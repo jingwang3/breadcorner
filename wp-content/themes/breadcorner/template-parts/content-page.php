@@ -117,7 +117,8 @@
 						'posts_per_page'	=> -1,
 						'post_type'			=> array('bread','cookie','loaf','pastry'),
 						'meta_key'			=> 'code_number',
-						'orderby'			=> 'meta_value'
+						'orderby'			=> 'meta_value',
+						'order'				=> 'ASCE'
 					));
 					
 					if( $posts ): ?>
@@ -150,13 +151,20 @@
 						      </div>
 						    </div>
 						  </div>
-											
+									
+					<?php wp_reset_postdata(); ?>		
 					
 					<?php endif; ?>
 					
 					
 					<?php 
-
+					$posts = get_posts(array(
+						'posts_per_page'	=> -1,
+						'post_type'			=> array('bread','cookie','loaf','pastry'),
+						'meta_key'			=> 'code_number',
+						'orderby'			=> 'meta_value',
+						'order'				=> 'ASCE'
+					));
 					
 					if( $posts ): ?>
 						
@@ -189,12 +197,21 @@
 						      </div>
 						    </div>
 						  </div>
-											
+								
+					<?php wp_reset_postdata(); ?>			
 					
 					<?php endif; ?>
 					
 					<?php
 
+					$posts = get_posts(array(
+						'posts_per_page'	=> -1,
+						'post_type'			=> array('bread','cookie','loaf','pastry'),
+						'meta_key'			=> 'code_number',
+						'orderby'			=> 'meta_value',
+						'order'				=> 'ASCE'
+					));
+					
 					if( $posts ): ?>
 						
 						  <div class="panel panel-default accordion-loaf">
@@ -227,10 +244,19 @@
 						    </div>
 						  </div>
 
+					<?php wp_reset_postdata(); ?>
 					
 					<?php endif; ?>
 					
 					<?php
+					
+					$posts = get_posts(array(
+						'posts_per_page'	=> -1,
+						'post_type'			=> array('bread','cookie','loaf','pastry'),
+						'meta_key'			=> 'code_number',
+						'orderby'			=> 'meta_value',
+						'order'				=> 'ASCE'
+					));
 					
 					if( $posts ): ?>
 						

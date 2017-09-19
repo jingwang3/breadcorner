@@ -45,8 +45,9 @@
 					<div class="list-group">						
 						<?php 
 							$posts = get_posts(array(
-							'posts_per_page'	=> -1,
-							'post_type'			=> get_post_type()
+								'posts_per_page'	=> -1,
+								'post_type'			=> get_post_type(),
+								'sort_column'  => 'menu_order, post_title'
 							));
 							
 						if( $posts ): ?>

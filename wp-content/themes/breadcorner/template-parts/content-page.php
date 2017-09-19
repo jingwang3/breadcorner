@@ -118,7 +118,7 @@
 						'post_type'			=> array('bread','cookie','loaf','pastry'),
 						'meta_key'			=> 'code_number',
 						'orderby'			=> 'meta_value',
-						'order'				=> 'DESC'
+						'order'				=> 'ASCE'
 					));
 					
 					if( $posts ): ?>

@@ -127,7 +127,7 @@
 						    <div class="panel-heading" role="tab" id="headingOne">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          A - <span><?php the_field( 'group_a_description' ); ?></span>
+						          A<span><?php the_field( 'group_a_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>
@@ -165,7 +165,7 @@
 						    <div class="panel-heading" role="tab" id="headingThree">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-						          B - <span><?php the_field( 'group_b_description' ); ?></span>
+						          B<span><?php the_field( 'group_b_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>
@@ -202,7 +202,7 @@
 						    <div class="panel-heading" role="tab" id="headingFour">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-						          C - <span><?php the_field( 'group_c_description' ); ?></span>
+						          C<span><?php the_field( 'group_c_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>
@@ -239,7 +239,7 @@
 						    <div class="panel-heading" role="tab" id="headingFive">
 						      <h4 class="panel-title">
 						        <a class="btn btn-primary text-left btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-						          D - <span><?php the_field( 'group_d_description' ); ?></span>
+						          D<span><?php the_field( 'group_d_description' ); ?></span>
 						        </a>
 						      </h4>
 						    </div>

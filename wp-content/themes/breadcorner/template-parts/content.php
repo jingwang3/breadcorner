@@ -47,7 +47,9 @@
 							$posts = get_posts(array(
 								'posts_per_page'	=> -1,
 								'post_type'			=> get_post_type(),
-								'sort_column'  => 'menu_order, post_title'
+								'meta_key'			=> 'post_title',
+								'orderby'			=> 'meta_value',
+								'order'				=> 'ASC'								
 							));
 							
 						if( $posts ): ?>

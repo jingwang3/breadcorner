@@ -24,7 +24,7 @@
 			<div class="col-md-3 text-center">
 				<h3>Contact</h3>
 				<span><a href="tel:2403286547">(240) 328-6547</a> 
-				<br /><a href="mailto:breadcorner2009@gmail.com">breadcorner2009@gmail.com</a></span>
+				<br /><a href="mailto:breadcorneronlineorders@gmail.com">breadcorneronlineorders@gmail.com</a></span>
 			</div>
 			<div class="col-md-3 text-center">
 				<h3>Address</h3>
